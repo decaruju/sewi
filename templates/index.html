@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="/static/sewi.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+    <body>
+        <nav class="navbar">
+            <i class="fa fa-cloud-sun fa-3x" ></i>
+            <span class="text-3xl">
+                sewi
+            </span>
+        </nav>
+        <div id="stream" class="p-8 w-1/2 mx-auto">
+            {% for image in images %}
+            <div class="p-4 rounded-3xl shadow-2xl mb-8">
+                <img src={{image.src}}>
+            </div>
+            {% endfor %}
+        </div>
+    </body>
+</html>
