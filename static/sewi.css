@@ -9,3 +9,7 @@ body {
 
 .navbar {
 }
+
+#file-input {
+    display: none;
+}

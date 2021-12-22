@@ -6,6 +6,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+        <script src="/static/sewi.js"></script>
     <body>
         <nav class="navbar">
             <i class="fa fa-cloud-sun fa-3x" ></i>
@@ -13,6 +15,14 @@
                 sewi
             </span>
         </nav>
+        <div id="file-input-container" class="p-8 w-2/3 mx-auto">
+            <label>
+                <input class="" id="file-input" type="file">
+                <div class="px-4 py-2 bg-blue-500 rounded-full text-white cursor-pointer">
+                    Choose your sky
+                </div>
+            </label>
+        </div>
         <div id="stream" class="p-8 w-1/2 mx-auto">
             {% for image in images %}
             <div class="p-4 rounded-3xl shadow-2xl mb-8">
